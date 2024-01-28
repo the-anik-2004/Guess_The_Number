@@ -1,3 +1,4 @@
+"use strict";
 const checkButton=document.querySelector("#check-btn");
 const inputNum=document.querySelector("#inp-num");
 const prevGuess=document.querySelector(".guess");
