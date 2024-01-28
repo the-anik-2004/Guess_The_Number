@@ -1,4 +1,8 @@
 "use strict";
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+  });
+  
 const checkButton=document.querySelector("#check-btn");
 const inputNum=document.querySelector("#inp-num");
 const prevGuess=document.querySelector(".guess");
@@ -9,6 +13,8 @@ const info =document.querySelector(".info");
 let target=Math.floor(Math.random()*100+1);
 let  playGame=true;
 let attempt=0;
+
+
 
 
 function game(){
