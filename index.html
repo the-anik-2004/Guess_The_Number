@@ -19,6 +19,11 @@
             overflow-y: scroll;
             overflow-x: hidden;
         }
+        header{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
         .main{
             
          height: 100%;
@@ -109,9 +114,11 @@
 </head>
 <body>
     <section class="main">
-        <h1>Guess The Number</h1>
+        <header>
+            <h1>Guess The Number</h1>
         <strong>Try and give a random number between 1 and 100</strong>
         <strong>You have 10 attempts to guess the right number.</strong>
+        </header>
         <form action="">
             <label for="inp-num"><h1>Guess a Number:</h1></label>
             <input placeholder="Guess Number..." type="number" id="inp-num" required>
